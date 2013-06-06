@@ -15,12 +15,12 @@
 		<title>to do form</title>
     </head>
     <body>
-   		<H1>Vacation to-do form</H1>
+   		<H1>Vacation Planner</H1>
    		<form action="#" method="post"> <!-- post submits data behind the scenes -->
             <fieldset>
         	    <legend>Vacation Items</legend>
         	    <ul>
-        		    <li><label for="Iname">Item name:</label><input type="text" id="Iname" /></li>
+        		    <li><label for="Iname">Item name:</label><input type="text" id="Iname" placeholder="Extra Socks" /></li>
         	    </ul>   
              </fieldset>       
              <fieldset>
@@ -32,44 +32,31 @@
                 </ul>
              </fieldset>                          
              <fieldset>                   
-                 <legend></legend>
+                 <legend>Budget Planner</legend>
                      <label for="rating">Budget scale:</label><input type="range" min="$100" max="$10,000" name="rating" type="range">
               </fieldset>
-   	   </form>
-         <!-- content goes here-->
-         <! -- header tags -->    
-           <h1></h1>
-           <h2></h2>
-           <h3></h3>
-           <h4></h4>
-           <h5></h5>
-     
-     <!-- p tag -->
-     <p></p>
-     
-     <!-- lists -->
-     <! -- un orderd list -->
-     <ul>
-         <li></li>
-         <li></li>     
-         <li></li>         
-         <li></li>         
-     </ul>    
-    
-     <!-- orderd lists -->    
-     <ol>
-         <li></li>   
-         <li></li>        
-         <li></li>        
-         <li></li>         
-     </ol>   
-    <!-- definition list -->
-     <dl>
-        <dt></dt>
-        <dd></dd>
-     </dl>  
-         <!script src="js/main.js" type="text/javaScript"><!/script-->        
-     </body>
+   	          <fieldset>
+   	              <legend>Set Date</legend>
+   	                  <label for="startdate">Vacation starts on:</label>
+                      <input type="date" min="1904-03-17" max="1904-05-17" id="startdate" name="startdate" required aria-required="true"placeholder="1911-03-17"> 
+   	              <li>
+                      <label for="Climate">Type of climate</label>
+                      <select id="Climate">
+                          <optgroup label="Climate">
+                              <option value="Hot">Hot</option>
+                              <option value="Raining">Raining</option>                 	   
+   	                          <option value="Cold">Cold</option>   	   
+   	                      </optgroup>
+                      </select>
+   	              </li>     
+   	                   
+   	              <li><label for="notes">extra thoughts!</label><textarea id="notes"></textarea></li>
+   	              <li><input type="hidden" value="true" /></li>            
+   	          </fieldset>       
+   	          <imput type="submit" value="complete checklist" />                   	   
+   	     </form>
+                  <!script src="js/main.js" type="text/javaScript"><!/script-->        
+   </body>
 </html>
          
 
